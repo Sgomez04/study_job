@@ -1,0 +1,16 @@
+.button1:hover {
+  -fx-font-size: 47px;
+  -fx-font-family: "Mistral";
+}
+.button2:hover {
+  -fx-font-size: 19px;
+  -fx-font-family: "Mistral";
+}
+.palabra{
+ -fx-text-fill: white;
+}
+.panelBase {
+    -fx-background-repeat: stretch;
+    -fx-background-size: 6000,2090;
+    -fx-background-position: center center;
+}
