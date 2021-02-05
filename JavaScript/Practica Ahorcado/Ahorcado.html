@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="EstiloAhorcardo.css">
+    <script type="text/javascript" src="Ahorcado.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <p id="titulo">EL AHORCADO</p>
+        <br>
+        <div id="categoria">
+            <label for="Categoria" id = "categoria1" hidden >Elige una categoria</label>
+            <select onclick="elegirCampo()" id="categoria2" name="Categoria" hidden>
+                <option value="0"></option>
+                <option value="1">Animales</option>
+                <option value="2">Deportes</option>
+                <option value="3">Comida</option>
+                <option value="4">Flores</option>
+            </select>
+        </div>
+        <br><br>
+        <img src="img/fondo.png" id="imagen" hidden>
+        <br><br><br>
+        <div class = "row">
+        <input type="button" id="comenzar" value="COMENZAR" onclick="comenzar();">
+        </div>
+        <p id="Win_Loose"></p>
+        <p id="vidas"></p>
+        <input type="button" id="start" value="Start" onclick="StartGame();" style="display:none" disabled>
+        <p id="1" hidden>Jirafa,Conejo,Perro,Gato,Raton,Oso,Leon,Mono,Serpiente,Escarabajo</p>
+        <p id="2" hidden>Futbol,Baloncesto,Tenis,Balonmano,Natacion,Rugby,Atletismo,Beisbol,Padel,Voleibol</p>
+        <p id="3" hidden>Platano,Lenteja,Garbanzo,Hamburguesa,Macarrones,Pepino,Tomate,Manzana,Pan,Arroz</p>
+        <p id="4" hidden>Margarita,Rosa,Tulipan,Geranio,Girasol,Lavanda,Amapola,Petunia,Gardenia,Lirio</p>
+
+        <div class="win_lose"></div>
+        <p id="palabra"></p>
+        <div class="flex-row" id="abcdario"></div>
+        <input type="button" id="restart" value="Restart" onclick="comenzar();" style="display:none">
+    </div>
+</body>
+
+</html>

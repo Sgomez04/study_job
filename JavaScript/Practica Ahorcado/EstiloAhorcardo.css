@@ -1,0 +1,190 @@
+body {
+    background-image: none; 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    animation: myAnimation2 20s infinite;
+   }
+   @keyframes myAnimation2 {
+    25% {
+      background-color:  #EC7063;
+    }
+    75% {
+        background-color:  #AF7AC5;
+    }
+    
+    60% {
+        background-color: #58D68D;
+    }
+    50% {
+        background-color: #F4D03F;
+    }
+    25% {
+        background-color: #76D7C4;
+    }
+  }
+
+.container{
+    width: 60em;
+    padding:10%;
+    height:100%;
+    margin:auto;
+    text-align:center;
+
+}
+
+#titulo{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 100px;
+    animation: myAnimation 7s infinite;
+    border-radius: 15px;
+    text-shadow: 0 8px black;
+    transform: translateY(2px);
+}
+
+@keyframes myAnimation {
+    25% {
+      color:  #EC7063;
+    }
+    75% {
+       color:  #AF7AC5;
+    }
+    
+    40% {
+        color: #58D68D;
+    }
+    50% {
+        color: #F4D03F;
+    }
+    25% {
+        color: #76D7C4;
+    }
+  }
+
+#comenzar, #start, #restart{
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+} 
+
+#comenzar:active {
+    background-color: white;
+    box-shadow: 0 5px grey;
+    transform: translateY(4px);
+}
+
+#comenzar{
+    color:black;
+    background-color:  rgb(238, 242, 7);
+    box-shadow: 0 9px grey;
+}
+
+#start{
+    color: #fff;
+    background-color: purple;
+    box-shadow: 0 9px white;
+}
+
+#restart{
+    color: #fff;
+    background-color: grey;
+    box-shadow: 0 9px white;
+}
+
+#start:active, #restart:active {
+    background-color: white;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+#start:hover, #restart:hover, #comenzar:hover{
+font-size: 30px;
+animation: myAnimation2 5s infinite;
+color: black;
+box-shadow: black;
+}
+
+
+#categoria{
+    font-size: 30px;
+}
+
+#categoria2{
+    font-size: 30px;
+    background-color: white;
+    box-shadow: 0 5px #666;
+}
+
+
+#imagen{
+    width: 50%;
+    height: 20%;
+    text-align: center;
+}
+
+#palabra{
+    font-size: 100px;
+    color: white;
+    font-size:3em;
+    text-shadow: 0 0 10px black;
+
+}
+.hola{
+    margin: 3px;
+    background-color: white;
+    display: inline; display: inline-block;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px red;
+
+}
+
+.hola:hover{font-size: 20px;}
+
+.hola:disabled{
+    margin: 3px;
+    background-color: transparent;
+    display: inline; display: inline-block;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: transparent;
+    background-color: transparent;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px transparent;
+}
+
+#Win_Loose, #vidas{
+    text-shadow: 5px 5px 8px black;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100px;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+}
+#abcdario{
+background-color: transparent;
+
+}
