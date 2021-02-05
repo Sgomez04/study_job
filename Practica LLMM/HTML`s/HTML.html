@@ -1,0 +1,86 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>Web4you</title>
+<link rel = "stylesheet" href= "../CSS/estilo.css">
+</head>
+
+<body background="imagenes/Main/fondo.gif">
+<img src = "imagenes/Main/banner.gif" style = "width:100%;"></img>
+
+<div class = "botones2">
+	<a href = "Home.html"><button id ="nelegido"><strong>INICIO</strong></button></a>
+	<button id ="elegido"><strong>HTML</strong></button>
+	<a href = "CSS.html"><button id ="nelegido"><strong>CSS</strong></button></a>
+	<a href = "SVG.html"><button id ="nelegido"><strong>SVG</strong></button></a>
+</div>
+
+<div class = "estructura">
+<div class = "caja2">
+<img src = "imagenes/HTML/Para pagina html.png" width="100%" height="300"></img>
+<h2 class = "titulo" id = "t1">¿Cómo se utiliza?</h2>
+<p class = "parrafo" id = "p1">Para programar en HTML se utilizan "etiquetas". Éstas le dan formato al texto
+que luego aparecerá en tu sitio web, crean tablas, insertan imágenes, etc. Una etiqueta siempre va entre
+los símbolos "< >", de esta forma: <xxx>. Todo lo demás que no esté entre los "< >" es lo que aparecerá en 
+el sitio web.</p>
+
+<p class = "parrafo" id = "p1">Existen dos tipos de etiquetas: de apertura y de cierre.
+Las etiquetas de apertura tienen sólo una palabra clave, por ejemplo: <xxx>.Las etiquetas de cierre (las más comunes) 
+tienen dos palabras clave. La última va al final de la sentencia que quieres que aparezca en el sitio web y tiene 
+el símbolo "/", por ejemplo:<yyy> Hola, mi nombre es Dane </yyy>.</p>
+ 
+
+<h2 class = "titulo" id = "t1">Etiquetas mas utilizadas</h2>
+<p class = "parrafo" id = "p1">Tan solo veremos algunas etiquetas utilizadas, empezando por las mas importantes que forman la estructura. De cada una además solo veremos utilidades concretas de estas etiquetas HTML. Si deseas mas información sobre estas tendrás un enlace al final de esta página para acceder a dicha información</p>
+
+<h3 class = "subtitulo" id = "html"> Estructura básica de un documento HTML </h3>
+<p class = "parrafo" id = "p1"><b>&lt;html&gt;</b> (Abrimos el documento)</p>
+<p class = "parrafo" id = "p1"><b>&lt;head&gt;</b> (Abrimos el head)</p>
+
+<p>* En la cabecera o «head» se inserta todo lo referente al title, styles vinculados, scripts, etc.*</p>
+
+<p class = "parrafo" id = "p1"><b>&lt;/head&gt;</b> (Cerramos el head)</p>
+<p class = "parrafo" id = "p1"><b>&lt;body&gt;</b> (Abrimos el body)</p>
+
+<p> *En el cuerpo del documento o «body», es donde va el contenido general, el grueso de la página.*</p>
+
+<p class = "parrafo" id = "p1"><b>&lt;/body&gt;</b> (Cerramos el body)</p>
+<p class = "parrafo" id = "p1"><b>&lt;/html&gt;</b> (Cerramos el documento)</p>
+
+<h3 class = "subtitulo" id = "html"> Las etiquetas HTML más relevantes </h3>
+
+<p class = "parrafo" id = "p1"><b>&lt;title&gt;</b>: para definir el titulo de una página. Importantisimo para el SEO.</p>
+<div align="center"><iframe src="https://uniwebsidad.com/libros/xhtml/capitulo-3/estructurar" width=700 height=250 frameborder=1 scrolling=auto></iframe></div>
+
+<p class = "parrafo" id = "p1"><strong>&lt;link&gt; y &lt;style&gt;</strong>: ambas van dentro del &lt;head>, y sirven para aplicar estilos CSS a nuestro documento. Con <b>&lt;link&gt;</b> vinculamos de forma externa un archivo.css, y con &lt;style&gt; podemos escribir directamente código CSS dentro del head.</p>
+<div align="center"><iframe src="https://uniwebsidad.com/libros/css/capitulo-1/como-incluir-css-en-un-documento-xhtml" width=700 height=250 frameborder=1 scrolling=auto></iframe></div>
+
+<p class = "parrafo" id = "p1"><b>&lt;h1&gt;</b>, <b>&lt;h2&gt;</b>, <b>&lt;h3&gt;….&lt;</b>, <b>&lt;h6&gt;</b>: encabezados, numerados del 1 al 6 por orden de RELEVANCIA. El uso de estos encabezados es determinante para el SEO, porque es la mejor forma que tienen Google de entender la estructura de nuestro contenido y poder saber qué es lo relevante.</p>
+<div align="center"><iframe src="https://uniwebsidad.com/libros/xhtml/capitulo-3/estructurar" width=700 height=250 frameborder=1 scrolling=auto></iframe></div>
+
+<p id = "p1"><strong>* Un pequeño consejo: no se te ocurra, meter dos o más encabezados <b>&lt;h1&gt;</b>. Lo mejor, es poner sólo uno y que contenta tu keyword, y luego estructurar el contenido de forma coherente con <b>&lt;h2&gt;</b> y <b>&lt;h3&gt;</b>, incluyendo en ello la keyword y variantes, no siempre la misma exactamente.</strong></p>
+
+<p class = "parrafo" id = "p1"><b>&lt;table&gt;</b>, <b>&lt;tr&gt;</b> y <b>&lt;td&gt;</b>: son las tablas, las filas y las celdas. Están un poco obsoletas aunque a veces me han sacado de un apuro.</p>
+<div align="center"><iframe src="https://uniwebsidad.com/libros/xhtml/capitulo-7/tablas-basicas" width=700 height=250 frameborder=1 scrolling=auto></iframe></div>
+
+
+<p class = "parrafo" id = "p1"><b>&lt;div&gt;</b>: es un elemento «contendedor» de otras cosas. Realmente es lo que más se usa. Sabiendo manejar un &lt;div style=»loquenecesites»>contenido<b>&lt;/div&gt;</b> puedes hacer casi todo. Podrás ver un ejemplo práctico al final del post.</p>
+<div align="center"><iframe src="https://uniwebsidad.com/libros/xhtml/capitulo-9" width=700 height=250 frameborder=1 scrolling=auto></iframe></div>
+
+<p class = "parrafo" id = "p1"><b>&lt;a&gt;</b>: para añadir enlaces. Dentro de ella tendremos dos atributos importantes, que son: href=»indica_la_URL_o_RUTA» y target=»self o _blank», según quieras que el enlace se abra en la misma página o en una pestaña nueva.</p>
+<div align="center"><iframe src="https://uniwebsidad.com/libros/xhtml/capitulo-4/enlaces-basicos" width=700 height=250 frameborder=1 scrolling=auto></iframe></div>
+
+<p class = "parrafo" id = "p1"><b>&lt;img&gt;</b> es la etiqueta con la que se insertan las imágenes. Este es uno de los pocos casos que no necesita etiqueta de cierre, sino que vale con: &lt;img src=»rutadelaimagen» alt=»textoalternativo» /&gt;, sin poner <b>&lt;/img&gt;</b></p> 
+<div align="center"><iframe src="https://uniwebsidad.com/libros/css/capitulo-8" width=700 height=250 frameborder=1 scrolling=auto></iframe></div>
+
+
+<p class = "SaberMas"><strong>* Puedes obtener más información sobre CSS en el siguiente enlace*</strong></p>
+<p class = "SaberMas" id = "W3"><a href = "https://www.w3schools.com/css/default.asp">W3School.com/CSS</a></p>
+
+</div>
+</div>
+<pre class = "derechos">&reg; <strong>Todos los derechos reservados ®2019, Prohibida su reproducción total o parcial sin autorización.
+&reg; All Rights Reserved ®2019, Total or partial reproduction without authorization not allowed.</strong></pre>
+
+</body>
+</html>

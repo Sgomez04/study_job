@@ -1,0 +1,106 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>Web4you</title>
+<link rel = "stylesheet" href= "../CSS/estilo.css">
+</head>
+
+<body background="imagenes/Main/fondo.gif">
+<img src = "imagenes/Main/banner.gif" style = "width:100%;"></img>
+
+<div class = "botones2">
+ <a href = "Home.html"><button id="nelegido"><strong>INICIO</strong></button></a>
+ <a href = "HTML.html"><button id="nelegido"><strong>HTML</strong></button></a>
+ <button id="elegido"><strong>CSS</strong></button>
+ <a href = "SVG.html"><button id="nelegido"><strong>SVG</strong></button></a>
+</div>
+<div class = "estructura">
+<div class = "caja2"><img src = "imagenes/CSS/css-art.jpg" width="100%" height="300"></img></img> 
+
+<h2 class = "titulo" id ="t3">¿Cómo se utiliza?</h2>
+<p class = "parrafo" id = "p3">Antes de empezar con CSS, debemos saber las formas en las que podemos incluir contenido CSS en nuestros documentos HTML. Existen tres formas diferentes principales:</p>
+
+<h3 class = "subtitulo" id = "css">CSS Externo</h3>
+<p class = "parrafo" id = "p3">En la cabecera del HTML, el bloque &lt;head&gt;&lt;/head&gt;, incluimos una relación al archivo CSS en cuestión:</p>
+
+<img src = "imagenes/CSS/externo.png" width="100%" height="200" id = "imagenes2"></img>
+
+<p class = "parrafo" id = "p3">De esta forma, los navegadores sabrán que deben aplicar los estilos de este archivo (index.css) al documento HTML actual. Se aconseja escribir 
+esta línea lo antes posible (sobre todo, antes de scripts), obligando así al navegador a aplicar los estilos cuanto antes y eliminar la falsa 
+sensación de página no cargada por completo.</p>
+
+<p class = "parrafo" id = "p3">Esta es la manera recomendada de utilizar un archivo CSS en nuestros documento y la que utilizaremos principalmente.</p>
+
+<p class = "parrafo" id = "p3">También es posible incluir archivos CSS mediante la regla @import (las cuales deberían ir al principio del documento), pero esta regla sólo es 
+recomendable en ciertas situaciones puesto que su utilización afecta al rendimiento de carga de la página, así que nos centraremos sólo en la anterior.</p>
+
+<h3 class = "subtitulo" id = "css">CSS Interno</h3>
+<p class = "parrafo" id = "p3">Otra de las formas que existen para incluir estilos en un documento HTML es la de añadirlos directamente en la cabecera HTML del documento:</p>
+
+<img src = "imagenes/CSS/interno.png" width="100%" height="200" id = "imagenes2"></img> 
+
+<p class = "parrafo" id = "p3">Este sistema puede servir en algunos casos, pero hay que tener en cuenta que utilizándolo, arruinamos la ventaja de tener los estilos en un documento 
+independiente, por lo que siempre es preferible guardarlo en un archivo externo CSS.</p>
+
+<h3 class = "subtitulo" id = "css">CSS Embebido</h3>
+<p class = "parrafo" id = "p3">Por último, la tercera forma de aplicar estilos en un documento HTML es hacerlo directamente en las propias etiquetas, a través del atributo style:
+
+<img src = "imagenes/CSS/embebido.png" width="100%" height="200" id = "imagenes2"></img>
+ </p>
+
+<h2 class = "titulo" id ="t3">Propiedades mas utilizadas</h2>
+<p class = "parrafo">Las principales propiedades y por tanto las mas usadas en Css son las siguientes:</p>
+
+<h4 class = "atributos" id = "css"><b>Font-family:</b></h4>
+<p class = "parrafo" id = "p3">Define la familia tipográfica. Es conveniente poner una lista de dos o tres tipografías separadas por coma, porque si el usuario no tiene instalada la 
+tipografía que nosostros elegimos, el navegador opta por mostrar la siguiente que debería ser una similar, si tampoco la tiene instalada, mostrará la 
+tipografía por defecto.</p>
+
+<p class = "parrafo" id = "p3">Tenemos 3 opciones para definir la elección de la familia tipográfica:1) usar una de las fuentes más comunes (web safe fonts) que muy probablemente tenga
+instalada el usuario (Arial, Verdana, Trebuchet, Georgia, san serif, Times), 2) subir nuestra propia fuente con una propiedad nueva que se llama 
+@font-face, o 3) usar una fuente de Google Font, que en este momento es lo más recomendable.</p>
+
+<h4 class = "atributos"><b>Font-size:</b></h4>
+<p class = "parrafo" id = "p3">Define el tamaño de la fuente y el valor se puede escribir en pixels o en ems. En este momento se recomienda usar ems. Los dos son valores relativos, 
+el pixel es un valor relativo a la resolución de la pantalla, pero el em es relativo al tamaño de la fuente definida por el usuario. Si el usuario no 
+cambió la configuración, el valor por defecto de los textos en todos los navegadores es de 16px. Entonces 1em = 16px.</p>
+
+<h4 class = "atributos"><b>Color:</b></h4>
+<p class = "parrafo" id = "p3">Define el color de la tipografía. Los colores se pueden escribir de 3 formas distinas: con sistema hexadecimal, por ejemplo: #FF0000 (es rojo). Con 
+los nombres de los colores (más limitado) por ejemplo: black, red, green. O usando RGB, esta paleta permite agregar el canal alfa para hacer transparencias.</p>
+
+<h4 class = "atributos"><b>Width:</b></h4>
+<p class = "parrafo" id = "p3">Define el ancho de un elemento, el valor se puede escribir en pixels, ems o porcentaje.</p>
+
+<h4 class = "atributos"><b>Max-width o min-width:</b></h4>
+<p class = "parrafo" id = "p3">Definen el ancho máximo o mínimo de un elemento. Muy importante en sitios adaptables</p>
+
+<h4 class = "atributos"><b>Height:</b></h4>
+<p class = "parrafo" id = "p3">Define el alto de un elemento, el valor se puede escribir en pixels, ems o porcentaje.</p>
+
+<h4 class = "atributos"><b>Max-height o min-height:</b></h4>
+<p class = "parrafo" id = "p3">Definen el alto máximo o mínimo de un elemento. Muy importante en sitios adaptables.</p>
+
+<h4 class = "atributos"><b>Padding:</b></h4>
+<p class = "parrafo" id = "p3">Es la distancia desde el borde de un elemento hasta su contenido.</p>
+
+<h4 class = "atributos"><b>Margin:</b></h4>
+<p class = "parrafo" id = "p3">Es la distancia entre un elemento y otro (desde el borde de un elemento hacia afuera)</p>
+
+<h4 class = "atributos"><b>Border:</b></h4>
+<p class = "parrafo" id = "p3">Define el borde de un elemento, su color, su estilo y grosor.</p>
+
+<h4 class = "atributos"><b>Background:</b></h4>
+<p class = "parrafo" id = "p3">Define los fondos de un objeto. El fondo puede ser una imagen o un color. El color puede ser pleno o degradado. La imagen se puede repetir formando una 
+trama (es lo que ocurre por defecto) o se puede especificar que no repita y que se coloque en determinada posición.</p>
+
+
+<p class = "SaberMas"><strong>*Puedes obtener más información sobre CSS en el siguiente enlace*</strong></p>
+<p class = "SaberMas" id = "W3"><a href = "https://www.w3schools.com/css/default.asp">W3School.com/CSS</a></p>
+
+</div>
+</div>
+<pre class = "derechos">&reg; <strong>Todos los derechos reservados ®2019, Prohibida su reproducción total o parcial sin autorización.
+&reg; All Rights Reserved ®2019, Total or partial reproduction without authorization not allowed.</strong></pre>
+</body>
+</html>
