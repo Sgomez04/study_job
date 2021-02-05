@@ -1,0 +1,18 @@
+.button1:hover {
+  -fx-font-size: 30px;
+  -fx-font-family: "Viner Hand ITC";
+
+}
+.button2:hover {
+  -fx-font-size: 28px;
+  -fx-font-family: "Viner Hand ITC";
+}
+
+.letra:hover{
+  -fx-font-size: 30px;
+  -fx-font-family: "Viner Hand ITC";
+}
+
+.palabra{
+ -fx-text-fill: white;
+}
